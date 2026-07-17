@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#232750"/>
+      <stop offset="1" stop-color="#4a4670"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+
+  <!-- crescent moon: soft glow layer, then crisp stroke -->
+  <g fill="none" stroke="#ffffff" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M70 30 A 27 27 0 1 0 79.5 68 A 21 21 0 1 1 70 30 Z"
+          stroke-width="13" stroke-opacity="0.22"/>
+    <path d="M70 30 A 27 27 0 1 0 79.5 68 A 21 21 0 1 1 70 30 Z"
+          stroke-width="9" stroke-opacity="0.35"/>
+    <path d="M70 30 A 27 27 0 1 0 79.5 68 A 21 21 0 1 1 70 30 Z"
+          stroke-width="5.5"/>
+  </g>
+
+  <!-- stars in the crescent's hollow -->
+  <g fill="#ffffff">
+    <circle cx="80" cy="34" r="2.2" fill-opacity="0.95"/>
+    <circle cx="90" cy="44" r="1.8" fill-opacity="0.8"/>
+    <circle cx="83" cy="53" r="1.6" fill-opacity="0.7"/>
+    <circle cx="93" cy="57" r="1.4" fill-opacity="0.6"/>
+  </g>
+
+  <!-- the sea (Mare Imbrium) / sound wave -->
+  <g fill="none" stroke="#ffffff" stroke-linecap="round">
+    <path d="M28 98 Q 40 88 52 96 T 76 96 Q 88 90 100 97"
+          stroke-width="9" stroke-opacity="0.18"/>
+    <path d="M28 98 Q 40 88 52 96 T 76 96 Q 88 90 100 97"
+          stroke-width="4.5" stroke-opacity="0.85"/>
+  </g>
+</svg>

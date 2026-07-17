@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Milune</title>
+<link rel="icon" type="image/svg+xml" href="icon.svg">
+<style>
+* { box-sizing: border-box; margin: 0; }
+:root {
+    --bg1: #1a1d3f; --bg2: #3c3963;
+    --border: rgba(255, 255, 255, 0.12);
+    --text: #f2f2f5; --dim: #a3a3b5;
+    --accent: #8b7cff;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(160deg, var(--bg1) 0%, #23244d 55%, var(--bg2) 100%);
+    background-attachment: fixed;
+    color: var(--text);
+    line-height: 1.7;
+}
+a { color: var(--accent); text-decoration: none; }
+.wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 40px; }
+header img { width: 44px; height: 44px; border-radius: 11px; }
+header a { font-weight: 650; font-size: 18px; color: var(--text); }
+h1 { font-size: 32px; letter-spacing: -0.5px; margin-bottom: 6px; }
+.updated { color: var(--dim); font-size: 13px; margin-bottom: 36px; }
+h2 { font-size: 19px; margin: 32px 0 8px; }
+p, li { color: var(--dim); font-size: 15px; }
+p strong, li strong { color: var(--text); font-weight: 600; }
+ul { padding-left: 22px; margin: 8px 0; }
+.tldr {
+    background: rgba(139, 124, 255, 0.1);
+    border: 1px solid rgba(139, 124, 255, 0.35);
+    border-radius: 14px; padding: 18px 20px; margin-bottom: 12px;
+}
+.tldr p { color: var(--text); }
+</style>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <img src="icon.svg" alt=""><a href="index.html">Milune</a>
+    </header>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: July 12, 2026</p>
+
+    <div class="tldr">
+        <p><strong>Short version:</strong> Milune has no servers and no analytics. Your images, GIFs, music, notes and settings stay on your device (or in your own Google Drive and Chrome profile). We never see, collect, or sell any of your data.</p>
+    </div>
+
+    <h2>What Milune stores, and where</h2>
+    <ul>
+        <li><strong>Your images, GIFs and music</strong> are read from folders you explicitly select. They are displayed and played locally in your browser and are never uploaded anywhere.</li>
+        <li><strong>Settings, sticky notes, to-dos, quick links, countdowns and playback position</strong> are stored locally in your browser (localStorage / IndexedDB).</li>
+        <li><strong>Folder access permissions</strong> use the browser's File System Access API. You can revoke them at any time in Chrome's site settings.</li>
+        <li><strong>Google Drive folder preferences</strong> (if you use the Drive feature) are stored in Chrome's own synced extension storage, tied to your Google account — not to us.</li>
+    </ul>
+
+    <h2>Permissions Milune asks for</h2>
+    <ul>
+        <li><strong>Storage</strong> — to save your settings and widgets locally.</li>
+        <li><strong>Geolocation</strong> — only if you open the weather widget. Your approximate coordinates are sent directly from your browser to the free weather service <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a> to fetch the forecast. They are not stored by Milune. You can instead type a city name and never share your location.</li>
+        <li><strong>Identity / Google Drive (read-only)</strong> — only if you connect Google Drive (Premium). Milune requests the narrowest scope available (<em>drive.readonly</em>) and uses it solely to list and stream the folder you choose, directly from Google's servers to your browser. Milune cannot modify or delete your Drive files, and no Drive data passes through any Milune server — there are none.</li>
+    </ul>
+
+    <h2>Payments</h2>
+    <p>Premium purchases are processed by <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a> and <a href="https://stripe.com" target="_blank" rel="noopener">Stripe</a>. Milune never sees your card details. ExtensionPay stores the minimum needed to remember that your browser has an active subscription (see their <a href="https://extensionpay.com/privacy" target="_blank" rel="noopener">privacy policy</a>).</p>
+
+    <h2>What Milune does NOT do</h2>
+    <ul>
+        <li>No analytics, tracking pixels, or telemetry.</li>
+        <li>No ads.</li>
+        <li>No selling or sharing of data — there is no data to sell.</li>
+        <li>No accounts, no passwords, no emails collected.</li>
+    </ul>
+
+    <h2>Data deletion</h2>
+    <p>Everything Milune stores lives in your browser. Removing the extension deletes it. You can also clear individual pieces anytime via Chrome's "Clear browsing data" or by revoking folder/Drive permissions.</p>
+
+    <h2>Changes</h2>
+    <p>If this policy changes, the update will be posted on this page with a new date. Material changes will be noted in the extension's changelog.</p>
+
+    <h2>Contact</h2>
+    <p>Questions? Email <a href="mailto:hello@milune.app">hello@milune.app</a>.</p>
+</div>
+</body>
+</html>
